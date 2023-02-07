@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="techdoc_styles.css">
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Technical Document Example" />
+        <title>Technical Document</title>
+    </head>
+    <body>
+        <nav id="navbar">
+            <header>HTML Documentation</header>
+            <ul>
+                <li>
+                    <a class="nav-link" href="#introduction">Introduction</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#hello_world">Hello World</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#paragraphs">Paragraphs</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#headings">Headings</a>
+                </li>
+                <li>
+                    <a class="nav-link" href="#links">Links</a>
+                </li>
+            </ul> 
+        </nav>
+        <main id="main-doc">
+            <section class="main-section" id="introduction">
+                <header>Introduction</header>
+                <p> HTML is a standard markup language used mainly for constructing webpages. HTML stands for HyperText Markup Language.</p>
+                <p> Interestingly, HTML is <em>not</em> considered a programming language as it doesn't contain dynamic functionality. </p>
+            </section>
+            <section class="main-section" id="hello_world">
+                <header>Hello World</header>
+                <p>The three main parts of an HTML element are:</p>
+                <ul>
+                    <li>Opening tag</li>
+                    <li>Content</li>
+                    <li>Closing tag</li>
+                </ul>
+                <h3>EXERCISE</h3>
+                <p>Create a paragraph containing the worlds 'Hello World' using the following code, &lt;p&gt;i am in a p tag&lt;/p&gt;. The result is:</p>
+                <code>Hello World</code>
+                <p>Try it yourself!</p>
+            </section>
+            <section class="main-section" id="paragraphs">
+                <header>Paragraphs</header>
+                <p>The HTML &lt;p&gt; element defines a paragraph. A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.</p>
+                <h3>HTML DISPLAY</h3>
+                <p>You cannot be sure how HTML will be displayed.</p>
+                <p>Large or small screens, and resized windows will create different results.</p>
+                <p>HTML, you cannot change the display by adding extra spaces or extra lines in your HTML code.</p>
+                <p>The browser will automatically remove any extra spaces and lines when the page is displayed:</p>
+            </section>
+            <section class="main-section" id="headings">
+                <header>Headings</header>
+                <p></p>
+                <p>Search engines use the headings to index the structure and content of your web pages.</p>
+                <p>Users often skim a page by its headings. It is important to use headings to show the document structure.
+
+                    <code class="code-span">&lt;h1&gt;</code>
+                    headings should be used for main headings, followed by 
+                    <code class="code-span">&lt;h2&gt;</code>
+                    headings, then the less important 
+                    <code class="code-span">&lt;h2&gt;</code>, 
+                    and so on.
+                </p>
+            </section>
+            <section class="main-section" id="links">
+                <header>Links</header>
+                <p>HTML links are hyperlinks. You can click on a link and jump to another document. When you move the mouse over a link, the mouse arrow will turn into a little hand.</p>
+                <p>The HTML &lt;a&gt; tag defines a hyperlink. It has the following syntax:</p>
+                <code>&lt;a href="url"&gt;link text &lt;/a&gt;</code>    
+                <p>The most important attribute of the &lt;a&gt; element is the href attribute, which indicates the link's destination. The link text is the part that will be visible to the reader. Clicking on the link text, will send the reader to the specified URL address.</p>
+                <p>By default, links will appear as follows in all browsers:</p>
+                <ul>
+                    <li>An unvisited link is underlined and blue</li>
+                    <li>A visited link is underlined and purple</li>
+                    <li>An active link is underlined and red</li>
+                </ul>
+            </section>
+        </main>
+    </body>
+</html>
