@@ -28,7 +28,7 @@ button {
 }
 
 .quote-container {
-  width: 100%
+  width: 600px;
   max-height: 400px;
   position: relative;
 }
