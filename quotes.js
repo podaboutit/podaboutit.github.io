@@ -9,11 +9,11 @@ const generateQuote = function() {
             author: "Henry David Thoreau"
         },
         {
-            quote: "I did what I could I think. I sang some. I held my and out.",
-            author: "Jane Mead, 'I Wonder If I Will Miss The Moss'"
+            quote: "I laugh at what you call dissolution and I know the amplitude of time.",
+            author: "Walt Whitman"
         },
         {
-            quote: "I did what I could I think. I sang some. I held my and out.",
+            quote: "I did what I could I think. I sang some. I held my hand out.",
             author: "Jane Mead, 'I Wonder If I Will Miss The Moss'"
         },
         {
@@ -38,7 +38,7 @@ const generateQuote = function() {
         },
         {
             quote: "Public opinion is a weak tyrant compared with out own private opinion.",
-            author: "Henry David Thoreau'"
+            author: "Henry David Thoreau"
         },
         {
             quote: "There is still plenty of good music to be writen in C major.",
