@@ -34,7 +34,7 @@ const generateQuote = function() {
         },
         {
             quote: "You shouldn't be surprised that a fig tree produces figs, nor the world what it produces.",
-            author: "Marcus Aurelius'"
+            author: "Marcus Aurelius"
         },
         {
             quote: "Public opinion is a weak tyrant compared with out own private opinion.",

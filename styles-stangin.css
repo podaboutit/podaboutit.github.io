@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Heebo', sans-serif;
+    background-color: rgb(53, 148, 155);
+}
+
+.container {
+    width: 400px;
+    height: 500px;
+    background-color: rgb(216, 223, 230);
+    margin: 50px auto;
+    border-radius: 10% 10% 0% 10%;
+}
+
+input {
+    padding: .5em;
+    border: unset;
+    width: 250px;
+    background-color: gray;
+}
+
+input:focus,
+input:active {
+    outline: none;
+    border-style: none;
+    background-color: rgb(164, 164, 164);
+}
+
+input::placeholder {
+    color:rgb(255, 255, 255)
+}
+
+button {
+    cursor: pointer;
+}
+
+.autocomplete-wrapper {
+    display: inline-block;
+}
+
+.autocomplete-list {
+    padding: unset;
+    margin: unset;
+    list-style: none;
+}
+
+.autocomplete-list li {
+    background-color: rgba(63, 14, 109, 0.243);
+}
+
+.autocomplete-list li:hover {
+    background-color: rgba(126, 29, 217, 0.243);
+}
+.autocomplete-list button {
+    border: unset;
+    background: unset;
+    padding: .5em;
+}
+
