@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <link rel="stylesheet" href="styles.css">
+        <link rel="stylesheet" href="styles-portfolio.css">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@100;300;600&display=swap" rel="stylesheet"> 
@@ -11,14 +11,16 @@
         <title>Example Portfolio</title>
     </head>
     <body>
-        <nav id="navbar">
-            <a href="#About">About</a> 
-            <a href="#Work">Work</a> 
-            <a href="#Contact">Contact</a> 
+        <nav id="navbar" class="nav">
+            <ul class="nav-list">
+                <li><a href="#welcome-section">About</a></li>
+                <li><a href="#projects">Work</a></li>
+                <li><a href="#Contact">Contact</a></li> 
+            </ul>
         </nav>
         
         <section id="welcome-section">
-            <h1>Hey I am Doug</h1>
+            <h1>Hey I'm Doug</h1>
             <p>a web developer</h2>
         </section>  
         
@@ -26,10 +28,50 @@
             <h2>Check out my projects</h2>
             <div class="projects-grid">
                 <a class="project project-tile">
-                    <img class="project-img">
+                    <img class="project-img" src="/img/rwys_logo_3k_v7.png">
                     <p class="project-title">
                         <span class="code"><</span>
                         Project 1
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a class="project project-tile">
+                    <img class="project-img" src="/img/rwys_logo_3k_v7.png">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Project 2
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a class="project project-tile">
+                    <img class="project-img" src="/img/rwys_logo_3k_v7.png">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Project 3
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a class="project project-tile">
+                    <img class="project-img" src="/img/rwys_logo_3k_v7.png">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Project 1
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a class="project project-tile">
+                    <img class="project-img" src="/img/rwys_logo_3k_v7.png">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Project 2
+                        <span class="code">/></span>
+                    </p>
+                </a>
+                <a class="project project-tile">
+                    <img class="project-img" src="/img/rwys_logo_3k_v7.png">
+                    <p class="project-title">
+                        <span class="code"><</span>
+                        Project 3
                         <span class="code">/></span>
                     </p>
                 </a>
@@ -37,19 +79,17 @@
             <button>Show All</button>
         </section>
 
-        <section>
-            <h1>You have an idea...</h1>
-            <p>Let's Pod About It</p>
-            <div>
-                <a>
-                    <i>
-
-                    </i>
+        <section id="contact" class="contact-section">
+            <div class="contact-header">
+                <h2>You have an idea...</h2>
+                <p>Let's Pod About It</p>
+            </div>
+            <div class="contact-links">
+                <a id="profile-link" href="https://github.com/podaboutit" target="_blank">
+                    <i class="fab fa-github"></i>
+                    Github
                 </a>
             </div>
         </section>
-        <footer>
-
-        </footer>
     </body>
 </html>

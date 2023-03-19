@@ -33,3 +33,38 @@ button {
   max-height: 400px;
   position: relative;
 }
+
+/* center .poem and make it full width */
+.container{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+}
+
+/* use flex to make .poem-img and .poem-text sit next to each other */
+.poem-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.poem-img {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  margin: 0 20px;
+}
+
+.poem-text {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  margin: 0 20px;
+}
