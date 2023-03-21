@@ -88,7 +88,7 @@ button {
   position: relative;
 }
 
-.poem-container {
+.poetry-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -133,4 +133,23 @@ button {
   font-size: .9em;
   color: rgb(68, 145, 222);
   margin: 0;
+}
+
+.poem-title {
+  font-size: 3em;
+  margin: 0;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* center .poem-container and make it responsive */
+
+.poem-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
 }
