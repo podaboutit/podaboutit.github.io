@@ -6,7 +6,6 @@ body {
   font-family: 'Heebo', sans-serif;
   background-color: rgb(31, 31, 31);
   padding: 0;
-  margin: 100px;
 }
 
 h1 {
@@ -35,6 +34,10 @@ button {
   left: 0;
 }
 
+.wrapper {
+  margin: 100px;
+}
+
 /* center .top-nav and remove style from list items */
 .top-nav {
   display: flex;
@@ -47,15 +50,19 @@ button {
   padding: 0;
 }
 
+ul {
+  width: 100%;
+  padding: 0;
+}
+
 .top-nav > ul {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 100%;
   height: 100%;
-  margin: 0;
-  padding-bottom: 50px;
+  margin: 6vw;
+  padding-bottom: 20px;
 }
 
 .top-nav > ul > li {
@@ -106,15 +113,15 @@ button {
 }
 
 .poem-img {
-  width: 55%;
-  max-width: 500px;
-  margin-right: 5%;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0px 20px;
 }
 
 .poem-img > a > img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
 }
 
 .poem-meta {
@@ -125,10 +132,6 @@ button {
   margin: 0 20px;
 }
 
-.poem-meta > h1 {
-  font-size: 2em;
-}
-
 .poem-date {
   font-size: .9em;
   color: rgb(68, 145, 222);
@@ -136,10 +139,16 @@ button {
 }
 
 .poem-title {
-  font-size: 3em;
-  margin: 0;
+  font-size: 2em;
+  margin: 20px 0px;
   width: 100%;
   max-width: 600px;
+}
+
+/* make the underline go away on the .poem-title text */
+.poem-title > a {
+  text-decoration: none;
+  color: aliceblue;
 }
 
 /* center .poem-container and make it responsive */
@@ -152,4 +161,132 @@ button {
   width: 100%;
   max-width: 600px;
   margin: 0 auto;
+}
+
+/* a media query for mobile devices that makes .poetry-container responsive*/
+@media screen and (max-width: 950px) {
+  .poetry-container {
+    padding: 6vw;
+    text-align: left;
+  }
+  
+  .poem-block {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 100px;    
+  }
+
+  .poem-img {
+    margin: 30px 0px;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding-top: 60px
+  }
+
+  .poem-meta > h1 {
+    margin: 20px 0px;
+  }
+
+
+}
+
+.poetry-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+/* use flex to make .poem-img and .poem-text sit next to each other */
+
+.prose-block {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.prose-img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0px 20px;
+}
+
+.prose-img > a > img {
+  width: 100%;
+  height: 100%;
+}
+
+.prose-meta {
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  max-height: 300px;
+  margin: 0 20px;
+}
+
+.prose-date {
+  font-size: .9em;
+  color: rgb(68, 145, 222);
+  margin: 0;
+}
+
+.prose-title {
+  font-size: 2em;
+  margin: 20px 0px;
+  width: 100%;
+  max-width: 600px;
+}
+
+/* make the underline go away on the .prose-title text */
+.prose-title > a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+/* center .prose-container and make it responsive */
+
+.prose-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  width: 70vw;
+  margin: 0 auto;
+}
+
+/* a media query for mobile devices that makes .poetry-container responsive*/
+@media screen and (max-width: 950px) {
+  .poetry-container {
+    padding: 6vw;
+    text-align: left;
+  }
+  
+  .prose-block {
+    width: 100%;
+    display: block;
+    position: relative;
+    margin-bottom: 100px;    
+  }
+
+  .prose-img {
+    margin: 30px 0px;
+  }
+
+  .wrapper {
+    margin: 0;
+    padding-top: 60px
+  }
+
+  .prose-meta > h1 {
+    margin: 20px 0px;
+  }
+
+
 }
